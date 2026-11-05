@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الملك للسيارات | KING FOR CARS - سلطنة عُمان</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- خط تجوال الأنيق المطابق لفلسفة مرسيدس -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #070707;
+            color: #ffffff;
+        }
+        .border-mercedes {
+            border-color: rgba(255, 255, 255, 0.08);
+        }
+        .hover-card:hover {
+            border-color: rgba(255, 255, 255, 0.28);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-white selection:text-black">
+
+    <!-- شريط علوي تنفيذي مبسط -->
+    <header class="fixed top-0 w-full z-50 bg-[#070707]/90 backdrop-blur-xl border-b border-mercedes">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center">
+                    <i class="fa-solid fa-crown text-xs text-neutral-300"></i>
+                </div>
+                <div>
+                    <span class="text-base font-bold tracking-wider block">الملك للسيارات</span>
+                    <span class="text-[9px] tracking-[0.25em] text-neutral-400 block -mt-1 font-light">KING FOR CARS • OMAN</span>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-4 text-xs">
+                <a href="https://www.instagram.com/king.for.cars" target="_blank" class="text-neutral-400 hover:text-white transition flex items-center gap-2">
+                    <i class="fa-brands fa-instagram text-base"></i>
+                    <span class="hidden sm:inline font-mono">@king.for.cars</span>
+                </a>
+                <a href="https://wa.me/96893176666" target="_blank" class="border border-white/30 text-white px-5 py-2 hover:bg-white hover:text-black transition duration-300 font-medium tracking-wide">
+                    واتساب فوري
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- واجهة الصفحة الرئيسية (Hero / Statement) -->
+    <section class="relative min-h-[92vh] flex items-center justify-center text-center px-6 pt-24 overflow-hidden">
+        <!-- خلفية داكنة فخمة وسينمائية -->
+        <div class="absolute inset-0 bg-cover bg-center opacity-30" 
+             style="background-image: url('https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=1920&auto=format&fit=crop');">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#070707] via-[#070707]/80 to-transparent"></div>
+
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 border border-white/10 bg-white/5 backdrop-blur-md mb-8 text-[11px] tracking-widest text-neutral-300">
+                <i class="fa-solid fa-certificate text-white"></i>
+                <span>الأول في تقييمات العملاء لمعارض السيارات بسلطنة عُمان</span>
+            </div>
+
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-extralight tracking-tight leading-tight text-white mb-6">
+                تميز في <span class="font-bold text-neutral-100">الملك للسيارات.</span>
+            </h1>
+
+            <p class="text-neutral-400 text-sm sm:text-lg font-light leading-relaxed max-w-2xl mx-auto mb-10">
+                الوجهة الرائدة لاقتناء السيارات الجديدة والمستعملة بمواصفات خليجية وممشى قليل. بيع نقدي مباشر بشفافية تامة وتوثيق مرئي معتمد.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 text-xs font-semibold tracking-wider">
+                <a href="https://wa.me/96893176666?text=مرحبا،%20أريد%20الاستفسار%20عن%20المخزون%20المتوفر%20حالياً" target="_blank" 
+                   class="w-full sm:w-auto px-8 py-4 bg-white text-black hover:bg-neutral-200 transition duration-300 flex items-center justify-center gap-3">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>تواصل معنا عبر واتساب الآن</span>
+                </a>
+                <a href="#location" class="w-full sm:w-auto px-8 py-4 border border-white/20 text-white hover:border-white transition duration-300 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>موقع المعرض في المعبيلة</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- نبذة المعرض والقيم الأساسية (Editorial About) -->
+    <section class="py-20 border-y border-mercedes bg-[#0a0a0a]">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 text-right">
+            
+            <div class="border-r border-white/10 pr-6">
+                <span class="text-neutral-500 text-[11px] uppercase tracking-widest block mb-2">01 / الهوية والمصداقية</span>
+                <h3 class="text-xl font-bold text-white mb-3">حضور عُماني أصيل</h3>
+                <p class="text-neutral-400 text-xs sm:text-sm font-light leading-relaxed">
+                    يتميز المعرض بأسلوب عرض مباشر بالزي العماني التقليدي عبر منصات التواصل، موثقين أدق تفاصيل المحرك والبودي والعداد والسعر دون أي مواربة.
+                </p>
+            </div>
+
+            <div class="border-r border-white/10 pr-6">
+                <span class="text-neutral-500 text-[11px] uppercase tracking-widest block mb-2">02 / الثقة والانتشار</span>
+                <h3 class="text-xl font-bold text-white mb-3">+92 ألف متابع موثوق</h3>
+                <p class="text-neutral-400 text-xs sm:text-sm font-light leading-relaxed">
+                    قاعدة عملاء ضخمة ومستمرة على مستوى محافظات السلطنة، مع تغطية يومية متجددة للسيارات فور وصولها عبر حسابنا الرسمي على انستغرام.
+                </p>
+            </div>
+
+            <div class="border-r border-white/10 pr-6">
+                <span class="text-neutral-500 text-[11px] uppercase tracking-widest block mb-2">03 / المعايير</span>
+                <h3 class="text-xl font-bold text-white mb-3">مواصفات خليجية نقية</h3>
+                <p class="text-neutral-400 text-xs sm:text-sm font-light leading-relaxed">
+                    ننتقي السيارات ذات العداد القليل والمحافظ عليها بعناية فائقة، مع اعتماد نظام البيع كاش بأفضل الأسعار التنافسية في السوق العماني.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- قنوات التواصل المعتمدة الرسمية (Contact Hub) -->
+    <section id="contact" class="py-24 max-w-6xl mx-auto px-6">
+        <div class="text-center max-w-xl mx-auto mb-16">
+            <span class="text-xs uppercase tracking-[0.25em] text-neutral-500 block mb-2">قنوات الخدمة الرسمية</span>
+            <h2 class="text-3xl sm:text-4xl font-light text-white">تواصل مباشر مع إدارة المبيعات</h2>
+            <p class="text-neutral-400 text-xs sm:text-sm mt-3 font-light">
+                فريقنا متاح للرد الفوري على الاستفسارات وتحديد مواعيد المعاينة في المعرض.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <!-- بطاقة واتساب الرئيسية -->
+            <a href="https://wa.me/96893176666?text=مرحبا،%20أريد%20الاستفسار%20عن%20السيارات%20المعروضة" target="_blank" 
+               class="bg-[#0f0f0f] border border-mercedes p-8 transition-all duration-300 hover-card flex items-start justify-between group">
+                <div>
+                    <span class="text-[10px] text-emerald-400 uppercase tracking-widest block mb-2 font-mono">● استجابة فورية عبر واتساب</span>
+                    <h3 class="text-2xl font-bold text-white font-mono dir-ltr text-right">9317 6666</h3>
+                    <p class="text-neutral-400 text-xs mt-2 font-light">الرقم الأساسي المعتمد للمبيعات والاستفسار عن المخزون اليومي.</p>
+                </div>
+                <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-white transition shrink-0">
+                    <i class="fa-brands fa-whatsapp text-xl text-white"></i>
+                </div>
+            </a>
+
+            <!-- بطاقة الاتصال الهاتفي الإضافي -->
+            <a href="tel:96894094442" 
+               class="bg-[#0f0f0f] border border-mercedes p-8 transition-all duration-300 hover-card flex items-start justify-between group">
+                <div>
+                    <span class="text-[10px] text-neutral-400 uppercase tracking-widest block mb-2 font-mono">خط اتصال المبيعات المباشر</span>
+                    <h3 class="text-2xl font-bold text-white font-mono dir-ltr text-right">9409 4442</h3>
+                    <p class="text-neutral-400 text-xs mt-2 font-light">للاتصال الهاتفي المباشر والتنسيق السريع لزيارة صالة العرض.</p>
+                </div>
+                <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-white transition shrink-0">
+                    <i class="fa-solid fa-phone text-lg text-white"></i>
+                </div>
+            </a>
+
+            <!-- بطاقة حساب انستغرام -->
+            <a href="https://www.instagram.com/king.for.cars" target="_blank" 
+               class="bg-[#0f0f0f] border border-mercedes p-8 transition-all duration-300 hover-card flex items-start justify-between group">
+                <div>
+                    <span class="text-[10px] text-neutral-400 uppercase tracking-widest block mb-2 font-mono">منصة العروض اليومية المصورة</span>
+                    <h3 class="text-2xl font-bold text-white font-mono">@king.for.cars</h3>
+                    <p class="text-neutral-400 text-xs mt-2 font-light">انضم لأكثر من 92,000 متابع وشاهد مقاطع الريلز وفيديوهات الفحص أولاً بأول.</p>
+                </div>
+                <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-white transition shrink-0">
+                    <i class="fa-brands fa-instagram text-xl text-white"></i>
+                </div>
+            </a>
+
+            <!-- بطاقة الرقم الدولي المعتمد -->
+            <div class="bg-[#0f0f0f] border border-mercedes p-8 flex items-start justify-between">
+                <div>
+                    <span class="text-[10px] text-neutral-400 uppercase tracking-widest block mb-2 font-mono">خدمة العملاء بصيغة دولية</span>
+                    <h3 class="text-2xl font-bold text-white font-mono dir-ltr text-right">+968 9317 6666</h3>
+                    <p class="text-neutral-400 text-xs mt-2 font-light">للاتصال والواتساب من خارج وداخل سلطنة عُمان.</p>
+                </div>
+                <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center shrink-0">
+                    <i class="fa-solid fa-globe text-lg text-neutral-400"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- قسم الموقع واللوكيشن الدقيق (Location & Caution Note) -->
+    <section id="location" class="py-20 border-t border-mercedes bg-[#0a0a0a]">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="bg-[#0f0f0f] border border-mercedes p-8 md:p-12">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    
+                    <div class="lg:col-span-8">
+                        <span class="text-[10px] text-amber-400 tracking-widest uppercase block mb-2 font-mono">
+                            <i class="fa-solid fa-circle-exclamation ml-1"></i> تنبيه هام للزوار الكرام
+                        </span>
+                        <h3 class="text-2xl sm:text-3xl font-bold text-white mb-4">
+                            المعبيلة الجنوبية — مقابل محطة شل مباشرة
+                        </h3>
+                        <p class="text-neutral-400 text-xs sm:text-sm font-light leading-relaxed mb-4">
+                            نظراً لوجود عدة معارض بأسماء متشابهة في المنطقة الصناعية بالمعبيلة، نرجو منكم الاعتماد حصراً على إحداثيات الخريطة المباشرة المرفقة أدناه لضمان وصولكم لمعرض <strong class="text-white font-semibold">الملك للسيارات</strong> الأصلي.
+                        </p>
+                        <p class="text-neutral-500 text-xs font-mono">
+                            العنوان: شارع السيب – السيب – المنطقة الصناعية – سلطنة عُمان
+                        </p>
+                    </div>
+
+                    <div class="lg:col-span-4 flex flex-col gap-3">
+                        <a href="https://maps.app.goo.gl/8qt4fVgFtCefjLDu6" target="_blank" 
+                           class="w-full py-4 bg-white text-black text-center text-xs font-bold tracking-wider hover:bg-neutral-200 transition duration-300 flex items-center justify-center gap-2">
+                            <span>فتح الموقع عبر Google Maps</span>
+                            <i class="fa-solid fa-location-arrow text-xs"></i>
+                        </a>
+                        <a href="https://wa.me/96893176666?text=مرحبا،%20أرجو%20إرسال%20اللوكيشن%20المباشر%20للمعرض" target="_blank" 
+                           class="w-full py-3.5 border border-white/20 text-white text-center text-xs font-medium tracking-wider hover:border-white transition duration-300">
+                            طلب إرسال اللوكيشن على واتساب
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر الختامي (Mercedes Minimal Footer) -->
+    <footer class="py-12 border-t border-mercedes text-center text-xs text-neutral-500 bg-[#070707]">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p class="font-light tracking-wide">© 2025 الملك للسيارات | سلطنة عُمان - مسقط</p>
+            <div class="flex items-center gap-6 text-neutral-400 text-xs">
+                <a href="https://www.instagram.com/king.for.cars" target="_blank" class="hover:text-white transition">Instagram</a>
+                <a href="https://wa.me/96893176666" target="_blank" class="hover:text-white transition">WhatsApp</a>
+                <a href="https://maps.app.goo.gl/8qt4fVgFtCefjLDu6" target="_blank" class="hover:text-white transition">Google Maps</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- زر واتساب العائم فائق الأناقة -->
+    <a href="https://wa.me/96893176666?text=مرحبا،%20أريد%20الاستفسار%20عن%20المخزون%20المتوفر%20حالياً" 
+       target="_blank" 
+       class="fixed bottom-6 left-6 z-50 w-14 h-14 bg-white text-black hover:bg-neutral-200 transition-all duration-300 rounded-full flex items-center justify-center shadow-2xl" 
+       title="واتساب مباشر">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+    </a>
+
+</body>
+</html>
